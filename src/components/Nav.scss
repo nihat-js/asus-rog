@@ -1,0 +1,29 @@
+nav {
+   padding: 1rem 0;
+   background-color: #000;
+
+   .container {
+      &>.row1 {
+         display: flex;
+         justify-content: space-between;
+         align-items: center;
+
+         .link {
+            span {
+               display: inline-block;
+               padding: .75rem 1rem;
+               font-weight: bold;
+
+               a {
+                  color: #fff;
+               }
+            }
+         }
+
+         .action {
+            display: flex;
+            align-items: center;
+         }
+      }
+   }
+}
