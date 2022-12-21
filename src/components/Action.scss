@@ -1,0 +1,25 @@
+section.action{
+   padding: 3rem 0 ;
+   .container{
+      & > .heading {
+         text-align: center;
+         font-size: 2rem;
+         text-transform: uppercase;
+         margin-bottom: 2rem;
+      }
+      .row {
+         display: grid;
+         grid-template-columns: repeat(3,1fr);
+         gap: 1.25rem;
+         margin-bottom: 2.5rem;
+      }
+      .learn {
+         
+         text-align: center;
+         a{
+            color: var(--color-red-1);
+         }
+         text-transform: uppercase;
+      }
+   }
+}

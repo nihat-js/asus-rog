@@ -1,8 +1,10 @@
 import React from 'react'
+import './ActionCard.scss'
 
 export default function ActionCard(props) {
   return (  
-      <div className='card'>
+      <div className='action-card'>
+         
          <figure>
             <img src={props.data.src} alt="" />
          </figure>
