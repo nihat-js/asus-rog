@@ -1,4 +1,4 @@
-nav {
+nav.main-nav {
    padding: 1rem 0;
    background-color: #000;
 
@@ -8,14 +8,26 @@ nav {
          justify-content: space-between;
          align-items: center;
 
+         .logo {
+            img {
+               width: 200px;
+            }
+         }
+
          .link {
             span {
                display: inline-block;
-               padding: .75rem 1rem;
+               padding: .75rem .5rem;
+               font-size: .9rem;
                font-weight: bold;
+               text-transform: uppercase;
 
                a {
                   color: #fff;
+               }
+
+               a:hover {
+                  color: var(--color-red-1)
                }
             }
          }
@@ -23,6 +35,80 @@ nav {
          .action {
             display: flex;
             align-items: center;
+
+            .home {
+               padding-right: 1.25rem;
+               border-right: 2px solid #bfbfbf;
+
+               img {
+                  width: 100px;
+                  cursor: pointer;
+               }
+
+            }
+
+            .search {
+               margin-left: 1.5rem;
+
+               img {
+                  width: 24px;
+                  cursor: pointer;
+
+                  &:hover {
+                     color: var(--color-red-1);
+                  }
+               }
+            }
+
+            .profile {
+               margin-left: 1.5rem;
+               cursor: pointer;
+
+               img {
+                  width: 24px;
+               }
+            }
+
+
+
+         }
+      }
+   }
+}
+
+nav.search-nav {
+   background-color: #202020;
+   padding: 3rem 0;
+
+   .container {
+      max-width: 700px;
+
+      .form-group {
+         display: grid;
+         grid-template-columns: 11fr 1fr;
+         margin-bottom: 1.5rem;
+
+         input {
+            background-image: url(../assets/img/search.svg);
+            border: 1px solid #757575;
+            padding: 1rem 1.5rem;
+            background: none;
+            font-size: 1.1rem;
+            color: var(--color-red-1);
+            outline: none;
+         }
+      }
+
+      .suggested {
+         .panel {
+            padding: .5rem 1rem;
+            color: #757575;
+            cursor: pointer;
+         }
+
+         .panel:hover {
+            color: var(--color-red-1);
+            background-color: #606060;
          }
       }
    }
