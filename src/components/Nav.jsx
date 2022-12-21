@@ -1,17 +1,28 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './Nav.scss'
 
 import img_logo from '../assets/img/logo.jpg'
 import img_search from "../assets/img/search.svg"
 import img_profile from "../assets/img/profile.svg"
 import img_asus from "../assets/img/asus.svg"
+import img_hamburger from "../assets/img/hamburger.svg"
+import img_profile_black from "../assets/img/profile-black.svg"
+import img_close from '../assets/img/close.svg'
 
 export default function Nav() {
+
+   const [displaySearch, setDisplaySearch] = useState(false)
+
    return (
       <>
          <nav className='main-nav'>
             <div className="container">
                <div className="row1">
+                  <div className="hamburger d-none">
+                     <figure>
+                        <img src={img_hamburger} alt="" />
+                     </figure>
+                  </div>
                   <div className="logo">
                      <figure>
                         <img src={img_logo} alt="" />
@@ -30,7 +41,7 @@ export default function Nav() {
                         <img src={img_asus} alt="" />
                      </figure>
                      <figure className="search">
-                        <img src={img_search} alt="" />
+                        <img src={img_search} onClick={() => { setDisplaySearch(!displaySearch) }} alt="" />
                      </figure>
                      <figure className="profile">
                         <img src={img_profile} alt="" />
@@ -39,11 +50,11 @@ export default function Nav() {
                </div>
             </div>
          </nav>
-         <nav className="search-nav">
+         <nav className={displaySearch ? 'search-nav ' : 'search-nav d-none'}    >
             <div className="container">
                <div className="form-group">
                   <input type="text" />
-                  <img src="" alt="" />
+                  <span className='close' onClick={() => { setDisplaySearch(!displaySearch) }}   > &times; </span>
                </div>
                <div className="suggested">
                   <div className="panel">
@@ -62,6 +73,18 @@ export default function Nav() {
                      <h3 className='text'> ROG Swift PG32UQX </h3>
                   </div>
 
+               </div>
+            </div>
+         </nav>
+         <nav className="mobile-nav">
+            <div className="container">
+               <div className="row-top">
+                  <figure>
+                     <img src={img_profile_black} alt="" />
+                  </figure>
+                  <figure>
+                     <img src={img_close} alt="" />
+                  </figure>
                </div>
             </div>
          </nav>
