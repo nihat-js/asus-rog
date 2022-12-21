@@ -26,17 +26,26 @@ export default function Product() {
 
 
    const render_slider = () => {
-      let current_value = slider_start_value;
-      const empty_arr = new Array(5)
-      let result = empty_arr.map(n => {
-         return <h3> game </h3>
+      let current_value = slider_start_value - 1;
+      const empty_arr = [0, 0, 0, 0, 0]
+      let result = empty_arr.map((n, index) => {
+         current_value++
+         if (current_value > slider_data.length) {
+            current_value %= slider_data.length
+         }
+         return <figure key={index}>
+            <img src={slider_data[current_value]} alt="" />
+         </figure>
       })
-      console.log(result)
       return result
    }
 
-   const slider_action = () => {
-
+   const slider_action = (query) => {
+      if (query == 'next') {
+         set_slider_start_value(slider_start_value + 1)
+      } else if (query == 'previous') {
+         set_slider_start_value(slider_start_value - 1)
+      }
    }
 
 
@@ -61,3 +70,7 @@ export default function Product() {
       </section>
    )
 }
+
+// 0 1 2 3
+// 4 5 6 7
+// 8 9 10 11

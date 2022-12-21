@@ -19,10 +19,14 @@ section.hero {
             .el {
                width: 64px;
                height: 6px;
-               background-color: var(--color-red-1);
+               background-color: #bfbfbf;
                transform: skew(-20deg);
                cursor: pointer;
                margin-right: .5rem;
+            }
+
+            .active {
+               background-color: var(--color-red-1);
             }
 
          }

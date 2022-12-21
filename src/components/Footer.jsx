@@ -21,12 +21,12 @@ export default function Footer() {
                   <span><a href=""> Accessibility help</a></span>
                </div>
                <div className="media">
-                  <img src={img_facebook} alt="" srcset="" />
-                  <img src={img_twitter} alt="" srcset="" />
-                  <img src={img_discord} alt="" srcset="" />
-                  <img src={img_youtube} alt="" srcset="" />
-                  <img src={img_twitch} alt="" srcset="" />
-                  <img src={img_instagram} alt="" srcset="" />
+                  <img src={img_facebook} alt="" />
+                  <img src={img_twitter} alt="" />
+                  <img src={img_discord} alt="" />
+                  <img src={img_youtube} alt="" />
+                  <img src={img_twitch} alt="" />
+                  <img src={img_instagram} alt="" />
                </div>
             </div>
             <div className="row-2">
@@ -36,7 +36,9 @@ export default function Footer() {
                <div className="right-column">
                   <span> <a href="">Terms of Notice</a> </span>
                   <span> <a href="">Privacy Policy</a> </span>
-                  <span> ©ASUSTEK COMPUTER INC. ALL RIGHTS RESERVED </span>
+                  <div className='copyright'>
+                     <span> ©ASUSTEK COMPUTER INC. ALL RIGHTS RESERVED </span>
+                  </div>
                </div>
             </div>
          </div>
