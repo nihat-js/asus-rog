@@ -12,11 +12,10 @@ import Footer from './components/Footer'
 
 export default function App() {
 
-   const [color,setColor] = React.useState(false)
+
 
    return (
-      <div className={color ? 'bg-dark' : ''}>
-         <button onClick={ () =>  setColor(!color)}> Change  </button>
+      <div >
          <Nav> </Nav>
          <Banner> </Banner>
          <Hero></Hero>

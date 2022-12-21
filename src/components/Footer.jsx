@@ -29,6 +29,16 @@ export default function Footer() {
                   <img src={img_instagram} alt="" srcset="" />
                </div>
             </div>
+            <div className="row-2">
+               <div className="left-column">
+                  <span>  <a href="">Global/English</a> </span>
+               </div>
+               <div className="right-column">
+                  <span> <a href="">Terms of Notice</a> </span>
+                  <span> <a href="">Privacy Policy</a> </span>
+                  <span> ©ASUSTEK COMPUTER INC. ALL RIGHTS RESERVED </span>
+               </div>
+            </div>
          </div>
       </footer>
    )
