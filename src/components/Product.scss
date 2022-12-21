@@ -1,0 +1,39 @@
+section.product{
+   padding: 3rem 0;
+   .container{
+      .heading{
+         text-align: center;
+         font-size: 2rem;
+         margin-bottom: 3rem;
+      }
+      .row {
+         position: relative;
+         .slider{
+            display: grid;
+            grid-template-columns: repeat(5,1fr);
+            gap: 1.5rem;
+         }
+         .navigation {
+            .left , .right {
+               font-size: 1.2rem;
+               padding: 1rem;
+               position: absolute;
+               top : 50% ;
+               transform: translate(0,-50%);
+               border-radius: 50%;
+               cursor: pointer;
+               font-weight: bold;
+            }
+            .left:hover , .right:hover{
+               background-color: #33aec2;
+            }
+            .left {
+               left : -50px;
+            }
+            .right {
+               right: -50px;
+            }
+         }
+      }
+   }
+}

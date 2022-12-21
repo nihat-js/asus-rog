@@ -1,0 +1,29 @@
+section.hero {
+   .container-fluid {
+      position: relative;
+      .row {
+         .slider{
+            img {
+					width: 100%;
+				}
+         }
+         .navigation {
+            position: absolute;
+            bottom: 30px;
+            left: 50%;
+            transform: translate(-50%, 0);
+            display: flex;
+            
+            .el {
+               width: 64px;
+               height: 8px;
+               background-color: #deffad;
+               transform: skew(20deg);
+               cursor: pointer;
+               margin-right: 1rem;
+            }
+
+         }
+      }
+   }
+}

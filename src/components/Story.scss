@@ -1,0 +1,28 @@
+section.story{
+   padding: 3rem 0 ;
+   .container{
+      .heading{
+         text-align: center;
+         margin-bottom: 2rem;
+      }
+      .row-1{
+         display: grid;
+         grid-template-columns: 1fr 1fr ;
+         grid-gap: 1rem;
+         figure {
+            img {
+               width: 100%;
+            }
+         }
+      }
+      .row-2 {
+         display: grid;
+         grid-template-columns: 1fr 1fr 1fr;
+         figure {
+            img {
+               width: 100%;
+            }
+         }
+      }
+   }
+}
