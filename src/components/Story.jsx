@@ -21,21 +21,27 @@ export default function Story() {
             <div className="row-1">
                <figure>
                   <img src={story_1} alt="" />
+                  <figcaption> STEAL THE SPOTLIGHT WITH THE NEW ROG STRIX GEFORCE RTX 4090 AND RTX 4080 WHITE EDITION CARDS</figcaption>
                </figure>
                <figure>
                   <img src={story_2} alt="" />
+                  <figcaption> WHAT IS A VAPOR CHAMBER, AND HOW DOES IT IMPROVE MY PC’S COOLING?  </figcaption>
                </figure>
-            </div>
-            <div className="row-2">
                <figure>
                   <img src={story_3} alt="" />
                </figure>
+            </div>
+            <div className="row-2">
+               
                <figure>
                   <img src={story_4} alt="" />
                </figure>
                <figure>
                   <img src={story_5} alt="" />
                </figure>
+            </div>
+            <div className="learn">
+               <a href="">Learn more</a>
             </div>
          </div>
       </section>

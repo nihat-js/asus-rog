@@ -1,11 +1,37 @@
 section.story{
    padding: 3rem 0 ;
+   background-image: url('../assets/img/story-bg.jpg');
    .container{
       .heading{
+         font-size: 2rem;
+         text-transform: uppercase;
+         color :#fff;
          text-align: center;
          margin-bottom: 2rem;
       }
+      figure {
+         position: relative;
+         img {
+            width: 100%;
+            object-fit: fill;
+         }
+         figcaption{
+            position: absolute;
+            bottom: 15px;
+            width: 90%;
+            margin-left: 5%;
+            color : #fff;
+         }
+      }
+
       .row-1{
+         display: grid;
+         grid-template-columns: 1fr 1fr 1fr ;
+         grid-gap: 1rem;
+       
+      }
+      .row-2 {
+         margin-top: 1.5rem;
          display: grid;
          grid-template-columns: 1fr 1fr ;
          grid-gap: 1rem;
@@ -15,13 +41,15 @@ section.story{
             }
          }
       }
-      .row-2 {
-         display: grid;
-         grid-template-columns: 1fr 1fr 1fr;
-         figure {
-            img {
-               width: 100%;
-            }
+      .learn {
+         margin-top: 2rem;
+         display: flex;
+         justify-content: center;
+         a {
+            display: inline-block;
+            color: var(--color-red-1);
+            text-transform: uppercase;
+            font-size: 1.1rem;
          }
       }
    }
