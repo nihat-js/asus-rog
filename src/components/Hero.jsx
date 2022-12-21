@@ -16,12 +16,21 @@ export default function Hero() {
                   <img src={hero_1} alt="" />
                </figure>
                <div className="navigation">
+                  {() => {
+                     console.log('debug')
+                     return <h4> we</h4>
+                     // return new Array(5).map(n, index => {
+                     //    return (
+                     //       <span className='el'>  </span>
+                     //    )
+                     // })
+                  }}
+                  {/* <span className='el'  ></span>
                   <span className='el'></span>
                   <span className='el'></span>
                   <span className='el'></span>
                   <span className='el'></span>
-                  <span className='el'></span>
-                  <span className='e'></span>
+                  <span className='e'></span> */}
                </div>
 
             </div>

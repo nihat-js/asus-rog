@@ -1,38 +1,48 @@
-section.product{
+section.product {
    padding: 3rem 0;
-   .container{
-      .heading{
+
+   .container {
+      .heading {
          text-align: center;
          font-size: 2rem;
          margin-bottom: 3rem;
       }
+
       .row {
          position: relative;
-         .slider{
+
+         .slider {
             display: grid;
-            grid-template-columns: repeat(5,1fr);
+            grid-template-columns: repeat(5, 1fr);
             gap: 1.5rem;
          }
+
          .navigation {
-            .left , .right {
+
+            .left,
+            .right {
                font-size: 1.2rem;
                padding: 1rem;
                position: absolute;
-               top : 50% ;
-               transform: translate(0,-50%);
+               top: 50%;
+               transform: translate(0, -50%);
                border-radius: 50%;
                cursor: pointer;
                font-weight: bold;
+
+               img {
+                  width: 32px;
+               }
             }
-            .left:hover , .right:hover{
-               background-color: #33aec2;
-            }
+
             .left {
-               left : -50px;
+               left: 0%;
             }
+
             .right {
-               right: -50px;
+               right: 0%;
             }
+
          }
       }
    }

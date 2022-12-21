@@ -12,6 +12,11 @@ import img_close from '../assets/img/close.svg'
 export default function Nav() {
 
    const [displaySearch, setDisplaySearch] = useState(false)
+   const [displaySecondBox, setDisplaySecondBox] = useState(false)
+
+   const renderSecondBox = () => {
+
+   }
 
    return (
       <>
@@ -86,9 +91,41 @@ export default function Nav() {
                      <img src={img_close} alt="" />
                   </figure>
                </div>
+               <div className="main-box">
+                  <div className="panel">
+                     <h2 className="text"> Products </h2>
+                  </div>
+                  <div className="panel">
+                     <h2 className="text"> Innovation </h2>
+                  </div>
+                  <div className="panel">
+                     <h2 className="text"> Downloads </h2>
+                  </div>
+                  <div className="panel">
+                     <h2 className="text"> Community </h2>
+                  </div>
+                  <div className="panel">
+                     <h2 className="text"> What's Hot </h2>
+                  </div>
+                  <div className="panel">
+                     <h2 className="text"> Support </h2>
+                  </div>
+               </div>
+               {/* {renderSecondBox} */}
             </div>
          </nav>
       </>
 
+   )
+}
+
+
+function SecondBox(props) {
+   return (
+      <>
+         <section className='second-box'>
+
+         </section>
+      </>
    )
 }

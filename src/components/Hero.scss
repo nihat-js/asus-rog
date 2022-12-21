@@ -1,26 +1,28 @@
 section.hero {
    .container-fluid {
       position: relative;
+
       .row {
-         .slider{
+         .slider {
             img {
-					width: 100%;
-				}
+               width: 100%;
+            }
          }
+
          .navigation {
             position: absolute;
             bottom: 30px;
             left: 50%;
             transform: translate(-50%, 0);
             display: flex;
-            
+
             .el {
                width: 64px;
-               height: 8px;
-               background-color: #deffad;
-               transform: skew(20deg);
+               height: 6px;
+               background-color: var(--color-red-1);
+               transform: skew(-20deg);
                cursor: pointer;
-               margin-right: 1rem;
+               margin-right: .5rem;
             }
 
          }
